@@ -1,0 +1,27 @@
+.header {
+    @include flex(row, nowrap, space-between, center);
+    width: $width;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+
+    &__nav {
+        @include flex(row, nowrap);
+        gap: 15px;
+        list-style: none;
+    }
+
+    &__a {
+        padding: 0.5rem;
+        border: solid 2px $color-2;
+        border-radius: 5px;
+        color: $color-1;
+        text-decoration: none;
+        transition: .3s;
+
+        &:hover {
+            background-color: $color-1;
+            color: $color-3;
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+.section__cursos {
+    @include flex(column, nowrap);
+    background-color: $color-4;
+
+    &__h2 {
+        width: $width;
+        margin: 1rem auto;
+        font-size: 2rem;
+    }
+
+    &__ul {
+        @include flex(row, wrap);
+        margin: 0 auto;
+        width: $width;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__li {
+        @include flex(column, nowrap);
+        text-align: center;
+        width: 22%;
+        background-color: $color-3;
+        box-shadow: 2px 2px 2px #ccc;
+        margin: 1.33%;
+        padding-top: 0.5rem;
+
+        &:hover {
+            box-shadow: 4px 4px 4px #ccc;
+        }
+    }
+
+    &__a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    &__img {
+        width: 50px;
+        height: 50px;
+    }
+
+}

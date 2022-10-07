@@ -1,0 +1,43 @@
+.footer {
+    @include flex(row, nowrap, space-between);
+    width: $width;
+    margin: 1rem auto;
+
+    &__div {
+        @include flex(row,nowrap, space-around, center);
+        width: 75%;
+    }
+
+    &__fieldset {
+        border: none;
+    }
+
+    &__legend {
+        margin: 0;
+    }
+
+    &__form__div{
+        display: flex;
+    }
+
+    &__input {
+        padding: 0.75rem;
+        
+        &--enviar {
+            background-color: $color-8;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: #FFFFFF;
+            border: none;
+            font-size: 1rem;
+        }
+
+        &--email{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            box-sizing: border-box;
+            border: 1px solid $color-8;
+        }
+    }
+    
+}

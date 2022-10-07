@@ -1,11 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   width: 85%;
@@ -14,7 +9,7 @@ body {
 }
 .header__nav {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: unset;
   align-items: unset;
   gap: 15px;
@@ -35,7 +30,7 @@ body {
 
 .section__cursos {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: unset;
   align-items: unset;
   background-color: #F2F5F7;
@@ -47,18 +42,17 @@ body {
 }
 .section__cursos__ul {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: unset;
   align-items: unset;
   margin: 0 auto;
   width: 85%;
   list-style: none;
-  flex-wrap: wrap;
   padding-left: 0;
 }
 .section__cursos__li {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: unset;
   align-items: unset;
   text-align: center;
@@ -83,8 +77,8 @@ body {
 
 .section__info {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-flow: row center;
+  justify-content: unset;
   align-items: unset;
   gap: 20px;
   padding: 2rem;
@@ -92,7 +86,7 @@ body {
 }
 .section__info__div {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: unset;
   align-items: unset;
   text-align: center;
@@ -120,13 +114,13 @@ body {
 
 .section__mapaCursos {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: unset;
   align-items: unset;
   background-color: #324C64;
   margin-top: 1.5rem;
   color: #FFFFFF;
-  height: 40vh;
+  height: 60vh;
 }
 .section__mapaCursos__h2 {
   width: 85%;
@@ -134,7 +128,7 @@ body {
 }
 .section__mapaCursos__div {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: unset;
   width: 85%;
@@ -174,7 +168,7 @@ body {
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: unset;
   width: 85%;
@@ -182,7 +176,7 @@ body {
 }
 .footer__div {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   width: 75%;
@@ -192,6 +186,9 @@ body {
 }
 .footer__legend {
   margin: 0;
+}
+.footer__form__div {
+  display: flex;
 }
 .footer__input {
   padding: 0.75rem;
@@ -211,17 +208,22 @@ body {
   border: 1px solid #4DBA7A;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 767px) {
   .header {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
     margin-bottom: 2rem;
   }
   .header__nav {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
   }
@@ -236,7 +238,7 @@ body {
   }
   .section__cursos {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
   }
@@ -245,7 +247,7 @@ body {
   }
   .section__cursos__ul {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
   }
@@ -255,7 +257,7 @@ body {
   }
   .section__info {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
   }
@@ -270,13 +272,13 @@ body {
   }
   .section__mapaCursos__div {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
   }
   .footer {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: unset;
     align-items: unset;
   }

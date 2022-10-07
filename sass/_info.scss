@@ -1,0 +1,36 @@
+
+.section__info {
+    @include flex(row, center);
+    gap: 20px;
+    padding: 2rem;
+    background-color: $color-5;
+
+    &__div {
+        @include flex(column);
+        text-align: center;
+        color: $color-3;
+    }
+
+    &__h3 {
+        margin-bottom: 0;
+    }
+
+    &__ul {
+        list-style: none;
+        flex-grow: 2;
+        line-height: 1.4em;
+    }
+
+    &__button {
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        color: $color-4;
+        background-color: $color-6;
+    }
+
+}
