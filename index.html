@@ -4,16 +4,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Alura</title> 
+    <link rel="stylesheet" href="./sass/styles.css">
+
+    <title>Mini Alura</title>
 </head>
 <body>
-    <header>
-        <h1>Mini Alura</h1>
-        <nav>
-            <ul>
-                
-            </ul>
+    <header class="header">
+        <h1 class="header__h1">Mini Alura</h1>
+        <nav class="header__nav">
+            <a class="header__a" href="#">Home</a>
+            <a class="header__a" href="#">Cursos</a>
+            <a class="header__a" href="#">Sobre Alura</a>
+            <a class="header__a" href="#">Contactos</a>
+            <a class="header__a header__a--mobileFirst" href="#">Nuestra App</a>
         </nav>
     </header>
+    <main>
+        <section class="section__cursos">
+            <h2 class="section__cursos__h2">Nuestros Cursos</h2>
+            <ul class="section__cursos__ul">
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="icono tacho rojo y blanco">
+                        <p>Java</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>PHP</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>Ruby on Rails</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>.Net</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>Pascal</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>Flexbox</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>Desarrollo Web</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>Java Web</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>Javascript</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>Angular JS</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>TDD com C</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>Redes de computadores</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>MySQL</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>MariaDB</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>Postegres</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>Lógica de programación</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background2.svg" alt="">
+                        <p>Lógica de programación</p>
+                    </a>
+                </li>
+                <li class="section__cursos__li">
+                    <a class="section__cursos__a" href="#">
+                        <img class="section__cursos__img" src="./img/background1.svg" alt="">
+                        <p>Lógica de programación</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="section__info">
+            <iframe class="section__info__iframe" width="500" height="315"
+                src="https://www.youtube.com/embed/PnfqWdmCHSo?list=PLh2Y_pKOa4UcF1BYPJR3EIMRi3nWAUxIp"
+                title="Data Science: Introdução a testes estatísticos com Python" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <div class="section__info__div">
+                <h3 class="section__info__h3">Ventajas de Mini Alura</h3>
+                <ul class="section__info__ul">
+                    <li class="section__info__li">Estudia donde quieras</li>
+                    <li class="section__info__li">Nuevos cursos todos los meses</li>
+                    <li class="section__info__li">Cursos compatibles con el mercado</li>
+                </ul>
+                <button class="section__info__button">Inscribase ya</button>
+            </div>
+        </section>
+        <section class="section__mapaCursos">
+            <h2 class="section__mapaCursos__h2">Mapa de cursos</h2>
+            <div class="section__mapaCursos__div">
+                <article class="section__mapaCursos__article">
+                    <h3 class="section__mapaCursos__h3--color1">Lenguajes Backend</h3>
+                    <ul class="section__mapaCursos__ul">
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Java</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">PHP</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Pascal</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Scala</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Python</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Java Web</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Assembly</a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="section__mapaCursos__article">
+                    <h3 class="section__mapaCursos__h3--color2">Lenguajes Frontend</h3>
+                    <ul class="section__mapaCursos__ul">
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Flexbox</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Desarrollo Web</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Javascript</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">AngularJS</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">ReactJS</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Polymer</a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="section__mapaCursos__article">
+                    <h3 class="section__mapaCursos__h3--color3">Frameworks</h3>
+                    <ul class="section__mapaCursos__ul">
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Ruby on Rails</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">VRaptor</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">SpringMVC</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">NodeJS</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Django</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Bootstrap3</a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="section__mapaCursos__article">
+                    <h3 class="section__mapaCursos__h3--color4">Banco de Datos</h3>
+                    <ul class="section__mapaCursos__ul">
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">MySQL</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">MariaDB</a>
+                        </li>
+                        <li class="section__mapaCursos__li">
+                            <a class="section__mapaCursos__a" href="">Postegres</a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__div">
+            <img class="footer__img" src="img/logos/alura.svg" alt="alura logo">
+            <img class="footer__img" src="img/logos/caelum.svg" alt="caelum logo">
+            <img class="footer__img" src="img/logos/cdc.svg" alt="casa do ce logo">
+        </div>
+        <form class="footer__form" action="">
+            <fieldset class="footer__fieldset">
+                <legend class="footer__legend">Entre en contacto</legend>
+                <div class="footer__form__div">
+                    <input class="footer__input footer__input--email" type="email" name="email">
+                    <input class="footer__input footer__input--enviar" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </footer>
 </body>
 </html>
